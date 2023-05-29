@@ -1,3 +1,5 @@
+package exam05;
+
 public class Audio implements RemoteControl{
     //필드
     private int volume;

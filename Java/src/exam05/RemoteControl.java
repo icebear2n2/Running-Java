@@ -1,3 +1,5 @@
+package exam05;
+
 public interface RemoteControl {
     // 상수
     public int MAX_VOLUME = 10;

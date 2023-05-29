@@ -1,3 +1,5 @@
+package exam05;
+
 public class Television implements RemoteControl {
     // 필드
     private int volume;

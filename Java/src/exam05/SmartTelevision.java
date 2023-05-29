@@ -1,3 +1,5 @@
+package exam05;
+
 public class SmartTelevision implements RemoteControl, Searchable{
     private int volume;
 
@@ -9,10 +11,10 @@ public class SmartTelevision implements RemoteControl, Searchable{
     }
 
     public void setVolume(int volume) {
-        if(volume>RemoteControl.MAX_VOLUME) {
-            this.volume = RemoteControl.MAX_VOLUME;
-        } else if(volume<RemoteControl.MIN_VOLUME) {
-            this.volume = RemoteControl.MIN_VOLUME;
+        if(volume> MAX_VOLUME) {
+            this.volume = MAX_VOLUME;
+        } else if(volume< MIN_VOLUME) {
+            this.volume = MIN_VOLUME;
         } else {
             this.volume = volume;
         }
@@ -22,6 +24,7 @@ public class SmartTelevision implements RemoteControl, Searchable{
     }
     public void search(String url) {
         System.out.println(url + "을 검색합니다.");
+        
     }
 
 }
